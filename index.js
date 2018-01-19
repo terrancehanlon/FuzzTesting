@@ -1,13 +1,14 @@
 //Write test cases for fizzbuzz
 
+const valueForFizz = 3, valueForBuzz = 5;
 var checkForFizzBuzz = function(value){
-  if(value % 3 == 0 && value % 5 == 0){
+  if(value % valueForFizz == 0 && value % valueForBuzz == 0){
     return "FizzBuzz";
   }
-  if(value % 3 == 0){
+  if(value % valueForFizz == 0){
     return "Fizz";
   }
-  if(value % 5 == 0){
+  if(value % valueForBuzz == 0){
     return "Buzz";
   }
   return value;
@@ -15,4 +16,4 @@ var checkForFizzBuzz = function(value){
 
 
 
-module.exports = checkForFizzBuzz;
+module.exports = { checkForFizzBuzz, valueForFizz, valueForBuzz };
