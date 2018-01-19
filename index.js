@@ -1,6 +1,6 @@
 //Write test cases for fizzbuzz
 
-const valueForFizz = 3, valueForBuzz = 5;
+const valueForFizz = 4, valueForBuzz = 6;
 var checkForFizzBuzz = function(value){
   if(value % valueForFizz == 0 && value % valueForBuzz == 0){
     return "FizzBuzz";
